@@ -29,7 +29,7 @@ public class MenuControl : MonoBehaviour
     public void Restart()
     {
 		Debug.Log("Restart");
-		SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
+		SceneManager.LoadScene("FirstScene", LoadSceneMode.Single);
     }
 
     // Quit the game
