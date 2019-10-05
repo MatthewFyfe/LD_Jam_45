@@ -49,6 +49,31 @@ public class EnemyAI : MonoBehaviour
  			//Apply damage to our player (his invulnerability might resist it)
  			other.transform.parent.GetComponent<PlayerMotion>().applyDamage(AttackValue, other.name);
  		}
+
+ 		//Check if we hit terrain as badgermoth
+ 		if(enemyType == "badgermoth" && other.tag == "Terrain")
+ 		{
+ 			transform.position += Vector3.back * 1;
+ 			float myRandom = Random.Range(0.0f,1.0f);
+ 			
+ 			if(myRandom<0.25)
+ 			{
+ 				transform.localEulerAngles = new Vector3(0,-180,0);	
+ 			}
+ 			else if(myRandom<0.5)
+ 			{
+ 				transform.localEulerAngles = new Vector3(0,0,0);
+ 			}
+ 			else if(myRandom<0.75)
+ 			{
+ 				transform.localEulerAngles = new Vector3(0,90,0);
+ 			}
+ 			else
+ 			{
+ 				transform.localEulerAngles = new Vector3(0,-90,0);
+ 			}
+ 			//gameObject.transform.rotation = Random.range(0,1);
+ 		}
     }
 
     private void HandleMovement()
@@ -85,6 +110,11 @@ public class EnemyAI : MonoBehaviour
 	        		gameObject.transform.rotation = Quaternion.LookRotation(player.transform.position-transform.position);
         		}
         	}
+        }
+        else if(enemyType == "badgermoth")
+        {
+        	//go forward until we crash, then back up a bit and go in a random cardinal direction
+        	transform.position += transform.forward * Time.deltaTime * Speed;
         }
     }
 }

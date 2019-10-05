@@ -340,6 +340,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: door_4x4 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 15c18e1fffbd84e3699ffaa830de0375,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 15c18e1fffbd84e3699ffaa830de0375,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -996,16 +1001,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 443562457}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
-        type: 3}
-      propertyPath: m_Name
-      value: torch (13)
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
-        type: 3}
-      propertyPath: m_TagString
-      value: Terrain
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: df98c8969f2a7443f9ffbcd452f98c7e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1060,6 +1055,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
+        type: 3}
+      propertyPath: m_Name
+      value: torch (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: df98c8969f2a7443f9ffbcd452f98c7e,
         type: 3}
@@ -1710,16 +1715,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 443562457}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
-        type: 3}
-      propertyPath: m_Name
-      value: torch (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
-        type: 3}
-      propertyPath: m_TagString
-      value: Terrain
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: df98c8969f2a7443f9ffbcd452f98c7e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1774,6 +1769,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
+        type: 3}
+      propertyPath: m_Name
+      value: torch (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: df98c8969f2a7443f9ffbcd452f98c7e,
         type: 3}
@@ -2033,16 +2038,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 443562457}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
-        type: 3}
-      propertyPath: m_Name
-      value: torch (10)
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
-        type: 3}
-      propertyPath: m_TagString
-      value: Terrain
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: df98c8969f2a7443f9ffbcd452f98c7e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2097,6 +2092,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
+        type: 3}
+      propertyPath: m_Name
+      value: torch (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: df98c8969f2a7443f9ffbcd452f98c7e,
         type: 3}
@@ -2359,6 +2364,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: doorContents_4x4
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: e2cbb71ac886d427891b05612b4b4d07,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: e2cbb71ac886d427891b05612b4b4d07,
         type: 3}
@@ -3629,6 +3639,7 @@ Transform:
   m_Children:
   - {fileID: 1940666706}
   - {fileID: 410438943}
+  - {fileID: 1189350511}
   m_Father: {fileID: 2010739855}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3639,16 +3650,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 443562457}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
-        type: 3}
-      propertyPath: m_Name
-      value: torch (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
-        type: 3}
-      propertyPath: m_TagString
-      value: Terrain
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: df98c8969f2a7443f9ffbcd452f98c7e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3703,6 +3704,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
+        type: 3}
+      propertyPath: m_Name
+      value: torch (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: df98c8969f2a7443f9ffbcd452f98c7e,
         type: 3}
@@ -4502,6 +4513,75 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4, y: 4, z: 0.25}
   m_Center: {x: 0, y: 0, z: 0.125}
+--- !u!1001 &552794183
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 426147179}
+    m_Modifications:
+    - target: {fileID: -927199367670048503, guid: a11b0f31abb9240b3b7d833578a7fa64,
+        type: 3}
+      propertyPath: m_Name
+      value: badgermoth
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: a11b0f31abb9240b3b7d833578a7fa64,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: a11b0f31abb9240b3b7d833578a7fa64,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: a11b0f31abb9240b3b7d833578a7fa64,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.8256912
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: a11b0f31abb9240b3b7d833578a7fa64,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: a11b0f31abb9240b3b7d833578a7fa64,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: a11b0f31abb9240b3b7d833578a7fa64,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: a11b0f31abb9240b3b7d833578a7fa64,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: a11b0f31abb9240b3b7d833578a7fa64,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: a11b0f31abb9240b3b7d833578a7fa64,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: a11b0f31abb9240b3b7d833578a7fa64,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: a11b0f31abb9240b3b7d833578a7fa64,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a11b0f31abb9240b3b7d833578a7fa64, type: 3}
 --- !u!1 &561310201 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: ba157478072a049a9ba7bdaaab5181ad,
@@ -4613,16 +4693,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 443562457}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
-        type: 3}
-      propertyPath: m_Name
-      value: torch (12)
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
-        type: 3}
-      propertyPath: m_TagString
-      value: Terrain
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: df98c8969f2a7443f9ffbcd452f98c7e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4677,6 +4747,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
+        type: 3}
+      propertyPath: m_Name
+      value: torch (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: df98c8969f2a7443f9ffbcd452f98c7e,
         type: 3}
@@ -4977,16 +5057,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 443562457}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
-        type: 3}
-      propertyPath: m_Name
-      value: torch (7)
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
-        type: 3}
-      propertyPath: m_TagString
-      value: Terrain
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: df98c8969f2a7443f9ffbcd452f98c7e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5041,6 +5111,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
+        type: 3}
+      propertyPath: m_Name
+      value: torch (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: df98c8969f2a7443f9ffbcd452f98c7e,
         type: 3}
@@ -5175,6 +5255,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: door_4x4 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 15c18e1fffbd84e3699ffaa830de0375,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 15c18e1fffbd84e3699ffaa830de0375,
         type: 3}
@@ -5439,16 +5524,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 443562457}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
-        type: 3}
-      propertyPath: m_Name
-      value: torch (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
-        type: 3}
-      propertyPath: m_TagString
-      value: Terrain
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: df98c8969f2a7443f9ffbcd452f98c7e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5503,6 +5578,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
+        type: 3}
+      propertyPath: m_Name
+      value: torch (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: df98c8969f2a7443f9ffbcd452f98c7e,
         type: 3}
@@ -6049,6 +6134,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: door_4x4 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 15c18e1fffbd84e3699ffaa830de0375,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 15c18e1fffbd84e3699ffaa830de0375,
         type: 3}
@@ -6806,6 +6896,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: doorContents_4x4 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: e2cbb71ac886d427891b05612b4b4d07,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: e2cbb71ac886d427891b05612b4b4d07,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6930,6 +7025,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: door_4x4 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 15c18e1fffbd84e3699ffaa830de0375,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 15c18e1fffbd84e3699ffaa830de0375,
         type: 3}
@@ -7852,16 +7952,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 443562457}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
-        type: 3}
-      propertyPath: m_Name
-      value: torch (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
-        type: 3}
-      propertyPath: m_TagString
-      value: Terrain
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: df98c8969f2a7443f9ffbcd452f98c7e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7916,6 +8006,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
+        type: 3}
+      propertyPath: m_Name
+      value: torch (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: df98c8969f2a7443f9ffbcd452f98c7e,
         type: 3}
@@ -8137,6 +8237,64 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4, y: 4, z: 0.25}
   m_Center: {x: 0, y: 0, z: 0.125}
+--- !u!1 &1189350509 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: a11b0f31abb9240b3b7d833578a7fa64,
+    type: 3}
+  m_PrefabInstance: {fileID: 552794183}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1189350510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189350509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d0440c3880d04e5693d06d462b39e72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyType: badgermoth
+  HP: 1
+  AttackValue: 0
+  Speed: 2
+  player: {fileID: 42589918}
+--- !u!4 &1189350511 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: a11b0f31abb9240b3b7d833578a7fa64,
+    type: 3}
+  m_PrefabInstance: {fileID: 552794183}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1189350512
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189350509}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.87191224, z: 1.8123045}
+  m_Center: {x: 0, y: 1.0640439, z: 0.19785237}
+--- !u!54 &1189350513
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189350509}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 116
+  m_CollisionDetection: 0
 --- !u!1001 &1203655572
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8565,6 +8723,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: door_4x4
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 15c18e1fffbd84e3699ffaa830de0375,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 15c18e1fffbd84e3699ffaa830de0375,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8690,16 +8853,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 443562457}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
-        type: 3}
-      propertyPath: m_Name
-      value: torch (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
-        type: 3}
-      propertyPath: m_TagString
-      value: Terrain
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: df98c8969f2a7443f9ffbcd452f98c7e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8755,6 +8908,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
+        type: 3}
+      propertyPath: m_Name
+      value: torch (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: df98c8969f2a7443f9ffbcd452f98c7e,
         type: 3}
       propertyPath: m_Enabled
@@ -8780,16 +8943,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 443562457}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
-        type: 3}
-      propertyPath: m_Name
-      value: torch (9)
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
-        type: 3}
-      propertyPath: m_TagString
-      value: Terrain
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: df98c8969f2a7443f9ffbcd452f98c7e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8844,6 +8997,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
+        type: 3}
+      propertyPath: m_Name
+      value: torch (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: df98c8969f2a7443f9ffbcd452f98c7e,
         type: 3}
@@ -9301,16 +9464,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 443562457}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
-        type: 3}
-      propertyPath: m_Name
-      value: torch (8)
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
-        type: 3}
-      propertyPath: m_TagString
-      value: Terrain
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: df98c8969f2a7443f9ffbcd452f98c7e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9365,6 +9518,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
+        type: 3}
+      propertyPath: m_Name
+      value: torch (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: df98c8969f2a7443f9ffbcd452f98c7e,
         type: 3}
@@ -9495,16 +9658,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 443562457}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
-        type: 3}
-      propertyPath: m_Name
-      value: torch (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
-        type: 3}
-      propertyPath: m_TagString
-      value: Terrain
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: df98c8969f2a7443f9ffbcd452f98c7e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9559,6 +9712,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
+        type: 3}
+      propertyPath: m_Name
+      value: torch (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: df98c8969f2a7443f9ffbcd452f98c7e,
         type: 3}
@@ -11280,16 +11443,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 443562457}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
-        type: 3}
-      propertyPath: m_Name
-      value: torch (11)
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
-        type: 3}
-      propertyPath: m_TagString
-      value: Terrain
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: df98c8969f2a7443f9ffbcd452f98c7e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11344,6 +11497,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
+        type: 3}
+      propertyPath: m_Name
+      value: torch (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: df98c8969f2a7443f9ffbcd452f98c7e,
         type: 3}
@@ -11785,16 +11948,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 443562457}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
-        type: 3}
-      propertyPath: m_Name
-      value: torch
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
-        type: 3}
-      propertyPath: m_TagString
-      value: Terrain
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: df98c8969f2a7443f9ffbcd452f98c7e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11849,6 +12002,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
+        type: 3}
+      propertyPath: m_Name
+      value: torch
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: df98c8969f2a7443f9ffbcd452f98c7e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: df98c8969f2a7443f9ffbcd452f98c7e,
         type: 3}
@@ -12624,6 +12787,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: door_4x4 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 15c18e1fffbd84e3699ffaa830de0375,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 15c18e1fffbd84e3699ffaa830de0375,
         type: 3}
