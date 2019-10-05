@@ -10,6 +10,11 @@ public class PlayerMotion : MonoBehaviour
     public Material baseColour;
     public Material flashRed;
 
+    public bool hasSword = false;
+    public bool hasAstrolabe = false;
+    public bool hasTextile = false;
+    public bool hasCards = false;
+
 	private Rigidbody rbody;
 	private GameObject myArms;
 	private float swordTimer, invulnTimer;
@@ -76,15 +81,15 @@ public class PlayerMotion : MonoBehaviour
         //Handle diagonals
         if(Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.A))
         {
-            transform.localEulerAngles = new Vector3(0,-135,0);
+            transform.localEulerAngles = new Vector3(0,135,0);
         }
         if(Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.D))
         {
-            transform.localEulerAngles = new Vector3(0,45,0);
+            transform.localEulerAngles = new Vector3(0,-135,0);
         }
         if(Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.A))
         {
-            transform.localEulerAngles = new Vector3(0,135,0);
+            transform.localEulerAngles = new Vector3(0,45,0);
         }
         if(Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.D))
         {
@@ -96,20 +101,31 @@ public class PlayerMotion : MonoBehaviour
     private void HandleAction()
     {
     	//Take care of SWORD action
-    	if(Input.GetKey(KeyCode.Space) && swordTimer <= 0)
-    	{
-    		myArms.SetActive(true);
-    		swordTimer = 0.5f;
-    	}
+        if(hasSword == true)
+        {
+        	if(Input.GetKey(KeyCode.Space) && swordTimer <= 0)
+        	{
+        		myArms.SetActive(true);
+        		swordTimer = 0.5f;
+        	}
 
-    	if(swordTimer > 0)
-    	{
-    		swordTimer -= Time.deltaTime;
-    	}
-    	else
-    	{
-    		myArms.SetActive(false);
-    	}
+        	if(swordTimer > 0)
+        	{
+        		swordTimer -= Time.deltaTime;
+        	}
+        	else
+        	{
+        		myArms.SetActive(false);
+        	}
+        }
+
+        //Take care of ASTROLABE actions
+
+        //Take care of MUSIC actions
+
+        //Take care TEXTILE actions
+
+        //Take care of CARDS actions
     }
 
     //Take care of damage timers and stuff

@@ -7,10 +7,11 @@ public class EnemyAI : MonoBehaviour
 	public string enemyType = "destructable";
 	public int HP = 1;
 	public int AttackValue = 0;
-	public float Speed = 1.0f;
+	public float Speed = 0.0f;
 	public GameObject player;
 
 	private enum EnemyClass {destructable, monster};
+	private Vector3 target;
 
     // Start is called before the first frame update
     void Start()
@@ -27,22 +28,13 @@ public class EnemyAI : MonoBehaviour
         	Destroy(gameObject);
         }
 
-        //Check if we should move towards player or whatever
-        if(enemyType == "monster")
-        {
-        	//See if in range
-        	if((Vector3.Distance(player.transform.position, gameObject.transform.position)) < 5)
-        	{
-        		//move towards player
-        		gameObject.transform.position = Vector3.MoveTowards(transform.position, player.transform.position, Speed*Time.deltaTime);
-        	}
-        }
+       HandleMovement();
     }
 
     private void OnTriggerEnter(Collider other)
     {
     	//Collision info for all enemies
-    	if(other.name == "Arms" && (enemyType == "destructable" || enemyType == "monster"))
+    	if(other.name == "Arms" && (enemyType == "destructable" || enemyType == "slime" || enemyType == "caterquito"))
     	{
     		HP -= 1;
  		}
@@ -57,5 +49,42 @@ public class EnemyAI : MonoBehaviour
  			//Apply damage to our player (his invulnerability might resist it)
  			other.transform.parent.GetComponent<PlayerMotion>().applyDamage(AttackValue, other.name);
  		}
+    }
+
+    private void HandleMovement()
+    {
+    	 //Check if we should move towards player or whatever
+        if(enemyType == "slime")
+        {
+        	//See if in range
+        	if((Vector3.Distance(player.transform.position, gameObject.transform.position)) < 5)
+        	{
+        		//move towards player and rotate to face them
+        		gameObject.transform.position = Vector3.MoveTowards(transform.position, player.transform.position, Speed*Time.deltaTime);
+        		gameObject.transform.rotation = Quaternion.LookRotation(player.transform.position-transform.position);
+        	}
+        }
+        else if(enemyType == "caterquito")
+        {
+        	//See if in range
+        	if((Vector3.Distance(player.transform.position, gameObject.transform.position)) < 15)
+        	{
+        		//Is the player looking at us? Calculate angle between his forward and the line between us
+	        	float viewAngle = Vector3.Angle(player.transform.forward, player.transform.position - transform.position);
+
+	        	if(viewAngle < 45)
+	        	{
+	        		//run away!
+	        		gameObject.transform.position = Vector3.MoveTowards(transform.position, player.transform.position, -Speed*Time.deltaTime);
+	        		gameObject.transform.rotation = Quaternion.LookRotation(transform.position-player.transform.position);
+	        	}
+	        	else
+	        	{
+	        		//move towards player and rotate to face them
+	        		gameObject.transform.position = Vector3.MoveTowards(transform.position, player.transform.position, Speed*Time.deltaTime);
+	        		gameObject.transform.rotation = Quaternion.LookRotation(player.transform.position-transform.position);
+        		}
+        	}
+        }
     }
 }
