@@ -21,11 +21,6 @@ public class mainGameLoop : MonoBehaviour
     // Update is called once per frame (independent of timeScale)
     void Update()
     {
-  		if (Input.GetKeyDown("space"))
-        {
-            print("space key was pressed");
-        }
-
         // Toggle menu UI and pause / unpause game physics
         if (Input.GetKeyDown("escape"))
         {
