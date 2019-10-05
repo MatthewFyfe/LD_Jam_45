@@ -7,8 +7,9 @@ public class CameraControls : MonoBehaviour
 	Quaternion rotation;
 	public GameObject player;
 
-	public float cameraOffsetHeight = 5.0f;
-	public float cameraOffsetBack = 3.5f;
+	public float cameraOffsetHeight = 7.0f;
+	public float cameraOffsetBack = 5.0f;
+    public float cameraXRotation = 50.0f;
 
 	private Vector3 position;
     
@@ -24,5 +25,6 @@ public class CameraControls : MonoBehaviour
     	position.z -= cameraOffsetBack;
     	position.y += cameraOffsetHeight;
     	transform.position = position;
+        //transform.localEulerAngles = new Vector3 (cameraXRotation, 0, 0);
     }
 }

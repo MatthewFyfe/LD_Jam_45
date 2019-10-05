@@ -29,7 +29,7 @@ public class EnemyAI : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
     	//Collision info for all enemies
-    	if(other.name == "Arms")
+    	if(other.name == "Arms" && enemyType == "destructable")
     	{
     		HP -= 1;
  		}
