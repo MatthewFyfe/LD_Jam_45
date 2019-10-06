@@ -39,6 +39,12 @@ public class EnemyAI : MonoBehaviour
 
             
         	Destroy(gameObject);
+
+            //Update Honour score
+            if(player != null)
+            {
+                player.GetComponent<PlayerMotion>().applyHonour(1);
+            }
         }
 
        HandleMovement();

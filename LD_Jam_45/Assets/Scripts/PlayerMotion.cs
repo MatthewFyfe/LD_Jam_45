@@ -24,6 +24,7 @@ public class PlayerMotion : MonoBehaviour
 	private float swordTimer, invulnTimer;
     private string lastHit;
     private AudioSource audioSource;
+    private int honour = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -189,11 +190,18 @@ public class PlayerMotion : MonoBehaviour
             audioSource.PlayOneShot(hurt, 2.0f);
 
             //update HUD
-            mainCamera.transform.Find("Canvas").GetComponentInChildren<Text>().text = "Health: " + HP;
+            mainCamera.transform.Find("Canvas").GetComponentsInChildren<Text>()[0].text = "Health: " + HP;
 
             //modify colour of player to signal hit (remove in FixedUpdate)
             GameObject.Find(region).gameObject.GetComponent<MeshRenderer>().material = flashRed;
         }
+    }
+
+    public void applyHonour(int amount)
+    {
+        honour += amount;
+
+        mainCamera.transform.Find("Canvas").GetComponentsInChildren<Text>()[1].text = "Honour: " + honour;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -211,6 +219,11 @@ public class PlayerMotion : MonoBehaviour
             Destroy(other.transform.gameObject);
             //update HUD
             mainCamera.transform.Find("Canvas").GetComponentInChildren<Text>().text = "Health: " + HP;
+        }
+
+        if(other.name == "FinishLine")
+        {
+            mainCamera.transform.Find("Canvas").GetComponentInChildren<Text>().text = "You Win!";
         }
     }
 }
