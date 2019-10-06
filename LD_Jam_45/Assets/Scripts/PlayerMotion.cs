@@ -225,5 +225,10 @@ public class PlayerMotion : MonoBehaviour
         {
             mainCamera.transform.Find("Canvas").GetComponentInChildren<Text>().text = "You Win!";
         }
+
+        if(other.name == "TutorialText_Trigger")
+        {
+            mainCamera.transform.Find("Canvas").GetComponentsInChildren<Text>()[2].text = "";
+        }
     }
 }
