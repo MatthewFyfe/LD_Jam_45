@@ -9,14 +9,17 @@ public class EnemyAI : MonoBehaviour
 	public int AttackValue = 0;
 	public float Speed = 0.0f;
 	public GameObject player;
+    public GameObject mainCamera;
+    public AudioClip deathSFX;
 
 	private enum EnemyClass {destructable, monster};
 	private Vector3 target;
+    private AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        audioSource = mainCamera.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -25,6 +28,16 @@ public class EnemyAI : MonoBehaviour
         if(HP <= 0)
         {
         	//Play a death sound
+            if(enemyType == "fishermole")
+            {
+                audioSource.PlayOneShot(deathSFX, 2.0F);
+            }
+            else
+            {
+                audioSource.PlayOneShot(deathSFX, 5.0F);
+            }
+
+            
         	Destroy(gameObject);
         }
 

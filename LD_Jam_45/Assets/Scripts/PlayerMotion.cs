@@ -9,6 +9,9 @@ public class PlayerMotion : MonoBehaviour
 
     public Material baseColour;
     public Material flashRed;
+    public GameObject mainCamera;
+    public AudioClip sword1;
+    public AudioClip hurt;
 
     public bool hasSword = false;
     public bool hasAstrolabe = false;
@@ -19,6 +22,7 @@ public class PlayerMotion : MonoBehaviour
 	private GameObject myArms;
 	private float swordTimer, invulnTimer;
     private string lastHit;
+    private AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +32,7 @@ public class PlayerMotion : MonoBehaviour
         myArms.SetActive(false);
         swordTimer = 0f;
         invulnTimer = 0f;
+        audioSource = mainCamera.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame (while time is positive)
@@ -60,40 +65,64 @@ public class PlayerMotion : MonoBehaviour
         if(Input.GetKey(KeyCode.W))
         {
         	transform.Translate(Vector3.forward * Time.deltaTime * movementSpeed, Space.World);
-        	transform.localEulerAngles = new Vector3(0,-180,0);
+            if(swordTimer <= 0)
+            {
+        	   transform.localEulerAngles = new Vector3(0,-180,0);
+            }
         }
         if(Input.GetKey(KeyCode.S))
         {
         	transform.Translate(Vector3.back * Time.deltaTime * movementSpeed, Space.World);
-        	transform.localEulerAngles = new Vector3(0,0,0);
+            if(swordTimer <= 0)
+            {
+        	   transform.localEulerAngles = new Vector3(0,0,0);
+            }
         }
         if(Input.GetKey(KeyCode.A))
         {
         	transform.Translate(Vector3.left * Time.deltaTime * movementSpeed, Space.World);
-        	transform.localEulerAngles = new Vector3(0,90,0);
+            if(swordTimer <= 0)
+            {
+        	   transform.localEulerAngles = new Vector3(0,90,0);
+            }
         }
         if(Input.GetKey(KeyCode.D))
         {
         	transform.Translate(Vector3.right * Time.deltaTime * movementSpeed, Space.World);
-        	transform.localEulerAngles = new Vector3(0,-90,0);
+            if(swordTimer <= 0)
+            {
+        	   transform.localEulerAngles = new Vector3(0,-90,0);
+            }
         }
 
         //Handle diagonals
         if(Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.A))
         {
-            transform.localEulerAngles = new Vector3(0,135,0);
+            if(swordTimer <= 0)
+            {
+                transform.localEulerAngles = new Vector3(0,135,0);
+            }
         }
         if(Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.D))
         {
-            transform.localEulerAngles = new Vector3(0,-135,0);
+            if(swordTimer <= 0)
+            {
+                transform.localEulerAngles = new Vector3(0,-135,0);
+            }
         }
         if(Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.A))
         {
-            transform.localEulerAngles = new Vector3(0,45,0);
+            if(swordTimer <= 0)
+            {
+                transform.localEulerAngles = new Vector3(0,45,0);
+            }
         }
         if(Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.D))
         {
-            transform.localEulerAngles = new Vector3(0,-45,0);
+            if(swordTimer <= 0)
+            {
+                transform.localEulerAngles = new Vector3(0,-45,0);
+            }
         }
     }
 
@@ -106,7 +135,9 @@ public class PlayerMotion : MonoBehaviour
         	if(Input.GetKey(KeyCode.Space) && swordTimer <= 0)
         	{
         		myArms.SetActive(true);
-        		swordTimer = 0.5f;
+                myArms.GetComponent<Animator>().Play("Moving");
+                audioSource.PlayOneShot(sword1, 2.0f);
+        		swordTimer = 0.3f;
         	}
 
         	if(swordTimer > 0)
@@ -154,6 +185,7 @@ public class PlayerMotion : MonoBehaviour
             invulnTimer = 1.0f;
             HP -= damage;
             lastHit = region;
+            audioSource.PlayOneShot(hurt, 2.0f);
 
             //modify colour of player to signal hit (remove in FixedUpdate)
             GameObject.Find(region).gameObject.GetComponent<MeshRenderer>().material = flashRed;
