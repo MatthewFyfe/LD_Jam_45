@@ -200,5 +200,11 @@ public class PlayerMotion : MonoBehaviour
             hasSword = true;
             Destroy(other.transform.gameObject);
         }
+
+        if(other.name == "medkit")
+        {
+            HP = 3;
+            Destroy(other.transform.gameObject);
+        }
     }
 }
