@@ -10283,7 +10283,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1094675813
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10347,8 +10347,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1601469678}
-        m_MethodName: Continue
+      - m_Target: {fileID: 1804444925}
+        m_MethodName: ResumeGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13870,6 +13870,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainMenuScreen: {fileID: 1601469676}
+  mainGameLoop: {fileID: 1804444923}
 --- !u!1001 &1604991045
 PrefabInstance:
   m_ObjectHideFlags: 0

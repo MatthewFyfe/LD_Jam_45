@@ -33,10 +33,15 @@ public class mainGameLoop : MonoBehaviour
          	}
          	else
          	{
-         		Time.timeScale = 1;
-         		cameraMusic.Play();
+         		ResumeGame();
          	}
         }
+    }
+
+    public void ResumeGame()
+    {
+        Time.timeScale = 1;
+        cameraMusic.Play();
     }
 
     // Physics updates (frozen while timeScale == 0)

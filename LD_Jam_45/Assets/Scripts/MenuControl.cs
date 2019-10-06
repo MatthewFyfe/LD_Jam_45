@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class MenuControl : MonoBehaviour
 {
 	public Canvas mainMenuScreen;
+    public GameObject mainGameLoop;
 
     // Start is called before the first frame update
     void Start()
@@ -22,13 +23,14 @@ public class MenuControl : MonoBehaviour
     // Unpause the game and continue
     public void Continue()
     {
-		Debug.Log("Continue");
+		//Debug.Log("Continue");
+        
     }
 
     // Reset the game to initial configuration
     public void Restart()
     {
-		Debug.Log("Restart");
+		//Debug.Log("Restart");
 		SceneManager.LoadScene("FirstScene", LoadSceneMode.Single);
     }
 
@@ -36,6 +38,6 @@ public class MenuControl : MonoBehaviour
     public void Exit()
     {
     	Application.Quit();
-    	Debug.Log("Exiting game...");
+    	//Debug.Log("Exiting game...");
     }
 }
