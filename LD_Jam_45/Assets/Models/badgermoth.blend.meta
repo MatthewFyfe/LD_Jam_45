@@ -6,6 +6,12 @@ ModelImporter:
   - first:
       74: 1989289236423521904
     second: Default Take
+  - first:
+      74: -7731985128630595836
+    second: BodyBonesAction
+  - first:
+      74: -5503896046945379279
+    second: Badgermoth
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -35,18 +41,18 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Default Take
-      takeName: Default Take
-      internalID: 1989289236423521904
-      firstFrame: 0
-      lastFrame: 249
+      name: Badgermoth
+      takeName: BodyAction
+      internalID: -5503896046945379279
+      firstFrame: -1
+      lastFrame: 29
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
