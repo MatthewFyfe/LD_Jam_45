@@ -34,7 +34,7 @@ public class EnemyAI : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
     	//Collision info for all enemies
-    	if(other.name == "Arms" && (enemyType == "destructable" || enemyType == "slime" || enemyType == "caterquito"))
+    	if(other.name == "Arms" && (enemyType == "destructable" || enemyType == "slime" || enemyType == "caterquito" || enemyType == "badgermoth" || enemyType == "fishermole"))
     	{
     		HP -= 1;
  		}
@@ -53,7 +53,7 @@ public class EnemyAI : MonoBehaviour
  		//Check if we hit terrain as badgermoth
  		if(enemyType == "badgermoth" && other.tag == "Terrain")
  		{
- 			transform.position += Vector3.back * 1;
+ 			transform.position += -transform.forward;
  			float myRandom = Random.Range(0.0f,1.0f);
  			
  			if(myRandom<0.25)
@@ -115,6 +115,26 @@ public class EnemyAI : MonoBehaviour
         {
         	//go forward until we crash, then back up a bit and go in a random cardinal direction
         	transform.position += transform.forward * Time.deltaTime * Speed;
+        }
+        else if(enemyType == "fishermole")
+        {
+            //constantly rotate to try and hit player
+            transform.Rotate(5, 0, 0);
+
+            //move while head it down and we can "see" player
+            RaycastHit hit;
+            Vector3 PlayerPosNoHeight = player.transform.position;
+            PlayerPosNoHeight.y = 0;
+
+            if(Physics.Raycast(transform.position+(transform.up * 2), player.transform.position, out hit, Mathf.Infinity))
+            {
+                
+            }
+            else
+            {
+                //Debug.DrawLine(transform.position+(transform.up * 2), player.transform.position, Color.yellow);
+                gameObject.transform.position = Vector3.MoveTowards(transform.position, PlayerPosNoHeight, Speed*Time.deltaTime);
+            }
         }
     }
 }
