@@ -8,4 +8,5 @@ LMMS 1.2.0
 GIMP 2.8
 An old Macbook Pro
 
-Check the Build.zip for a folder containing executable versions of the game for 64-Bit Windows and MacOSX.
+Check the Build.zip file at the following link for executable versions of the game for 64-Bit Windows and MacOSX.
+https://drive.google.com/file/d/1Nfmm7E8_BSWxvSU_1QD7gW45hsXC2TFx/view?usp=sharing
