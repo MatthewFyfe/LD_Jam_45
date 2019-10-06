@@ -191,4 +191,14 @@ public class PlayerMotion : MonoBehaviour
             GameObject.Find(region).gameObject.GetComponent<MeshRenderer>().material = flashRed;
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.name == "sword")
+        {
+            //get sword
+            hasSword = true;
+            Destroy(other.transform.gameObject);
+        }
+    }
 }
