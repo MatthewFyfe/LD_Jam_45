@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerMotion : MonoBehaviour
 {
@@ -187,6 +188,9 @@ public class PlayerMotion : MonoBehaviour
             lastHit = region;
             audioSource.PlayOneShot(hurt, 2.0f);
 
+            //update HUD
+            mainCamera.transform.Find("Canvas").GetComponentInChildren<Text>().text = "Health: " + HP;
+
             //modify colour of player to signal hit (remove in FixedUpdate)
             GameObject.Find(region).gameObject.GetComponent<MeshRenderer>().material = flashRed;
         }
@@ -205,6 +209,8 @@ public class PlayerMotion : MonoBehaviour
         {
             HP = 3;
             Destroy(other.transform.gameObject);
+            //update HUD
+            mainCamera.transform.Find("Canvas").GetComponentInChildren<Text>().text = "Health: " + HP;
         }
     }
 }
